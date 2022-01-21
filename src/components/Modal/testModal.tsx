@@ -9,8 +9,6 @@ import "./Modal.module.scss";
 
 export const TestModal = ({className, children, size, isOpen, onClose}: IModalProps) => {
 
-    type IModalSize = 'medium';
-
     const defaultClassNames = {
         modal: cn('ModalDefault', {
             ModalDefault__medium: size === 'medium',
@@ -19,6 +17,7 @@ export const TestModal = ({className, children, size, isOpen, onClose}: IModalPr
         className,
     };
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [styles, setStyles] = useState({});
 
     useEffect(() => {

@@ -1,14 +1,11 @@
 import React, {ReactNode, useState, useRef} from 'react';
 import useOnClickOutside from '../hooks/useOnClickOutside';
 import {SelectContext} from './selectContext';
-// import '../styles.css'
 import ReCAPTCHA from 'react-google-recaptcha';
 import {Button} from '../../Button/Button';
 import {ProgressBar} from '../../Forms/progressBar/ProgressBar';
 import {BsChevronLeft} from 'react-icons/bs';
-import {Router, useNavigate} from 'react-router';
-import {Route} from "react-router-dom";
-import HomePage from "../../../pages/HomePage/HomePage";
+import {useNavigate} from 'react-router';
 
 interface ISelect {
     children: ReactNode | ReactNode[];
@@ -20,6 +17,7 @@ const Select = ({children, defaultValue, placeholder}: ISelect) => {
 
     const [availableState, setAvailableState] = useState<boolean | undefined>(true)
     const [selectedOption, setSelectedOption] = useState(defaultValue || '');
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [borderStyle, setBorderStyle] = useState('select-container');
     const [recaptcha, setRecaptcha] = useState('hiddenState');
     const [buttonStyle, setButtonStyle] = useState('ghost');
@@ -140,6 +138,7 @@ const Select = ({children, defaultValue, placeholder}: ISelect) => {
             </div>
             <ProgressBar style={progressBar}/>
             <div className="wrapper-go-back">
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a className="a-go-back"><BsChevronLeft/></a>
             </div>
             <div className="wrapper-fraction">{fraction}</div>

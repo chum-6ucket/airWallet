@@ -16,7 +16,6 @@ export const Split = ({
                                                      children,
                                                      transition = 300,
                                                      isActive = false,
-                                                     onClose,
                                                  }: ISidebarProps): JSX.Element => {
     const nodeRef = useRef(null);
 
