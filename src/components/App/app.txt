@@ -1,0 +1,66 @@
+import React, {useEffect, useState} from 'react';
+import './App.scss';
+import {DropSearch} from '../Dropdown/Dropdown';
+
+import 'react-dropdown/style.css';
+import {Fade} from '../TestD';
+import {DND, Button, Rating, Tag, Menu, P, Modal} from 'components';
+import {withLayout} from '../../layout/Layout';
+import { SidebarTest } from 'layout/testSidebar/SidebarTest';
+import {Button as TestButton } from 'antd';
+
+// import { withLayout} from '../../layout/Layout';
+
+const Test = (): JSX.Element => {
+
+    let [counter, setCounter] = useState<number>(0);
+
+    const [rating, setRating] = useState<number>(4);
+
+    //////////////////
+    //
+    // const [isOpenModal, setIsOpenModal] = useState(false);
+    //
+    // const handleModalOpen = () => {
+    //     setIsOpenModal(true);
+    // }
+    //
+    // const handleModalClose = () => {
+    //     setIsOpenModal(false);
+    // }
+    //
+    // const handleModalSubmit = () => {
+    //     setIsOpenModal(false);
+    // };
+        //////////////////
+
+    return (
+        <>
+            <DND tag={'h1'}>My AirWallet</DND>
+            <DND tag={'h1'}>{counter}</DND>
+            <Button appearance="ghost" onClick={() => setCounter(x => x + 1)}>Log in</Button>
+            <P size='s'>Small</P>
+            <P size='m'>Medium</P>
+            <P size='l'>Large</P>
+            {/*<DropSearch/>*/}
+            {/*<Fade/>*/}
+            <Tag size="s">Ghost</Tag>
+            <Tag size="m" color="pink">pink</Tag>
+            <Tag size="s" color="green">Green</Tag>
+            <Tag size="s" color="blue">Blue</Tag>
+            <Rating rating={rating} isEditable setRating={setRating}/>
+
+
+            <Modal/>
+            {/*<Modal isOpen={isOpenModal} onClose={handleModalClose}>*/}
+            {/*    <Modal.Header>*/}
+            {/*        <h2>Title</h2>*/}
+            {/*    </Modal.Header>*/}
+            {/*    <Modal.Content>Content</Modal.Content>*/}
+            {/*    <Modal.Footer buttonSubmitText="Choise" onSubmit={handleModalSubmit}/>*/}
+            {/*</Modal>*/}
+        </>
+    );
+}
+
+export default withLayout(Test);

@@ -1,0 +1,30 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'FuturaMedium', serif;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    color: var(--blue);
+}
+
+@font-face {
+    font-family: 'FuturaMedium';
+    src: local('FuturaMedium'), url(./../../fonts/FuturaMedium.otf) format('opentype');
+}
+
+:root {
+
+    --primary: white;
+    --pink: rgb(209, 74, 217);
+    --pink-light: rgb(202, 59, 211);
+    --blue: rgb(3, 72, 106);
+    --blue-light: rgb(12, 141, 201);
+    --ghost-blue: rgb(204, 220, 228);
+    --lightblue: rgb(236, 237, 242);
+    --blue-hover: rgb(3, 63, 94);
+    --white-hover: var(--lightblue);
+}

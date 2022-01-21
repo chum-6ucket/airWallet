@@ -1,0 +1,94 @@
+.customOverlay {
+    /*background: rgba(36, 123, 160, 0.7);*/
+}
+
+.customModal {
+    max-width: 950px;
+    margin: 10% 0 0 20%;
+    display: grid;
+    grid: repeat(14, 1fr) minmax(5px, 10px) 1fr 1fr / 1fr minmax(10px,25px) auto repeat(6, 1fr) 60px;
+    background: #fff;
+    color: var(--blue);
+    padding: 0 0 20px 80px;
+    height: 500px;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.heading {
+    display: grid;
+    grid-area: 3/1/ span 2/span 5;
+    margin: 0;
+    font-family: 'FuturaMedium', serif;
+    color: var(--blue);
+}
+
+.message {
+    display: grid;
+    grid-area: 6/1/ span 3/span 9;
+    margin: 0;
+}
+
+.first-toggle-switch {
+    display: grid;
+    grid-area: 12/1/ span 1/span 1;
+}
+.wrapper-first-message {
+    display: grid;
+    grid-area: 10/2/ span 1/span 7;
+    margin: 0;
+}
+
+.second-toggle-switch {
+    display: grid;
+    grid-area: 10/1/ span 1/span 1;
+}
+
+.wrapper-second-message {
+    display: grid;
+    grid-area: 12/2/ span 1/span 7;
+    margin: 0;
+}
+
+.radio-switch {
+    display: grid;
+    grid-area: 13/2/ span 2/span 1;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*text-align: left;*/
+    margin-left: -142px;
+}
+.radioPadding {
+    padding: 4px 0;
+    margin-bottom: 4px;
+}
+
+.radio-message {
+    display: grid;
+    grid-area: 13/3/ span 2/span 5;
+    padding-top: 4px;
+    line-height: 27px;
+}
+
+.saveButton {
+    display: grid;
+    grid-area: 16/5/ span 1/span 3;
+    width: 85%;
+    height: 40px;
+    padding: 12px 0;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.skipButton {
+    display: grid;
+    grid-area: 17/5/ span 1/span 3;
+    width: 85%;
+    height: 40px;
+    padding: 12px 0;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+.skipButton:hover {
+    background-color: var(--primary);
+}

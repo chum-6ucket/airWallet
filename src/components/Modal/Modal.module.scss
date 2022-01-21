@@ -1,0 +1,60 @@
+//
+//
+//.Modal {
+//  &__open {}
+//
+//  &Header {
+//
+//    &__start {}
+//
+//    &__center {}
+//
+//    &__end {}
+//  }
+//
+//  &Content {
+//  }
+//
+//  &Footer {
+//    margin-top: 32px;
+//  }
+//
+//  &Default {
+//    padding: 40px;
+//    color: var(--blue);
+//
+//    &__medium {
+//      min-width: 950px;
+//      width: 100%;
+//    }
+//
+//    &CloseButton {
+//      width: 20px;
+//      height: 20px;
+//
+//      svg {
+//        fill: black;
+//        transition: all 0.15s;
+//      }
+//
+//      &:hover {
+//        svg {
+//          fill: grey;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+///* ----- Модальное окно по центру адаптировано ----- */
+//.react-responsive-modal-root .react-responsive-modal-container {
+//  //display: grid;
+//}
+//.customOverlay {
+//  background: rgba(36, 123, 160, 0.7);
+//}
+//.customModal {
+//  background: #b2dbbf;
+//  max-width: 500px;
+//  width: 100%;
+//}

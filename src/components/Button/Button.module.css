@@ -1,0 +1,39 @@
+.button {
+    position: relative;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 0;
+    letter-spacing: 1px;
+    width: 300px;
+    transition: all 0.2s;
+    border: none;
+    color: var(--primary);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+.primary {
+    color: var(--blue);
+    background-color: var(--primary);
+}
+
+.primary:hover {
+    background-color: var(--lightblue);
+    cursor: pointer;
+}
+
+.ghost:disabled {
+    background-color: var(--ghost-blue);
+}
+
+.primary_blue {
+    background-color: var(--blue);
+}
+
+.primary_blue:hover {
+    background-color: var(--blue-hover);
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.menu {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row: 1 / 5;
+}
+
+/*.menu {*/
+/*    grid-area: menu;*/
+/*}*/
+
+/*.exit {*/
+/*    grid-area: exit;*/
+/*}*/

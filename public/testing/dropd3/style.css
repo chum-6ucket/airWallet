@@ -1,0 +1,42 @@
+html, body {
+  height: 100vh !important;
+}
+
+body {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 40rem;
+  text-shadow: 0 2px 2px lightgray;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pattern styles */
+.container {
+  display: flex;
+}
+
+.left-half {
+  background-color: rgba(219, 40, 40, 0.5);
+  flex: 1;
+}
+
+.right-half {
+  background-color: rgba(33, 133, 208, 0.5);
+  flex: 1;
+}
+
+.wrapword {
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -webkit-pre-wrap; /*Chrome & Safari */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  white-space: pre-wrap;       /* css-3 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  word-break: break-all;
+  white-space: normal;
+  height: auto;
+}

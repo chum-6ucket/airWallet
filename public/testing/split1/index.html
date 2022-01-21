@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - pure css select with colorable svg arrow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <h1> LEFT </h1>
+        <a href="left.html" class="button">Click Here!</a>
+    </div>
+    <div class="right">
+        <h1> RIGHT </h1>
+        <a href="right.html" class="button">Click More! </a>
+    </div>
+</div>
+<script>
+    const left = document.querySelector('.left');
+    const right = document.querySelector('.right');
+    const container = document.querySelector('.container');
+
+    left.addEventListener('mouseenter', () => {
+        container.classList.add('hover-left');
+    });
+
+    left.addEventListener('mouseleave', () => {
+        container.classList.remove('hover-left');
+    });
+
+    right.addEventListener('mouseenter', () => {
+        container.classList.add('hover-right');
+    });
+
+    right.addEventListener('mouseleave', () => {
+        container.classList.remove('hover-right');
+    });
+
+</script>
+</body>
+</html>

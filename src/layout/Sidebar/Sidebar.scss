@@ -1,0 +1,105 @@
+
+.sidebar {
+  display: grid;
+  grid: repeat(12, 1fr) / 1fr 3fr;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 350px;
+  background: linear-gradient(rgb(208, 74, 217), rgb(1, 80, 119)) fixed;
+  //padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s;
+  justify-items: center;
+  align-items: center;
+  color: #fff;
+  transform: translateX(-80%);
+}
+
+.sidebar:hover .logo-icon-details {
+  transform: translateX(-5vw);
+  transition: 300ms;
+  opacity: 1;
+}
+
+.logo-icon-details {
+  padding: 5px 17px 0;
+  transition: 400ms;
+}
+
+.wrapper-logo {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  gap: 0 15px;
+  align-items: center;
+  justify-items: end;
+}
+
+.logo-details {
+  display: grid;
+  grid-area: 1 / 2 / 2 / 3;
+  font-size: 35px;
+  width: 100%;
+}
+
+.sidebar:hover {
+  transform: translateX(0);
+  transition: 300ms;;
+}
+
+.first-menu-item:hover, .second-menu-item:hover, .third-menu-item:hover, .fourth-menu-item:hover {
+  cursor: pointer;
+  color: pink;
+}
+
+.sidebar:hover .first-menu-item {opacity: 1;transition: 300ms;}
+.sidebar:hover .second-menu-item {opacity: 1;transition: 300ms;}
+.sidebar:hover .third-menu-item {opacity: 1;transition: 300ms;}
+.sidebar:hover .fourth-menu-item {opacity: 1;transition: 300ms;}
+
+.sidebar:hover .first-menu-icon {transform: translateX(-10px);transition: 300ms;}
+.sidebar:hover .second-menu-icon {transform: translateX(-10px);transition: 300ms;}
+.sidebar:hover .third-menu-icon {transform: translateX(-10px);transition: 300ms;}
+.sidebar:hover .fourth-menu-icon {transform: translateX(-10px);transition: 300ms;}
+.sidebar:hover .exit-menu-icon {transform: translateX(-10px);transition: 300ms;}
+
+
+
+.first-menu-item {grid-area: 5 / 2 / span 1 / span 1;opacity: 0;transition: 200ms;}
+.second-menu-item {grid-area: 6 / 2 / span 1 / span 1;opacity: 0;transition: 200ms;}
+.third-menu-item {grid-area: 7 / 2 / span 1 / span 1;opacity: 0;transition: 200ms;}
+.fourth-menu-item {grid-area: 8 / 2 / span 1 / span 1;opacity: 0;transition: 200ms;}
+
+
+.first-menu-icon {
+  position: fixed;
+  grid-area: 5/1/span 1/span 1;
+  transform: translateX(270px);
+  transition: 500ms;
+  font-size: 22px;
+}
+.second-menu-icon {
+  grid-area: 6/1/span 1/span 1;
+  transform: translateX(270px);
+  transition: 500ms;
+  font-size: 22px;
+}
+.third-menu-icon {
+  grid-area: 7/1/span 1/span 1;
+  transform: translateX(270px);
+  transition: 500ms;
+  font-size: 22px;
+}
+.fourth-menu-icon {
+  grid-area: 8/1/span 1/span 1;
+  transform: translateX(270px);
+  transition: 500ms;
+  font-size: 22px;
+}
+.exit-menu-icon {
+  grid-area: 11/1/span 2/span 1;
+  transform: translateX(270px);
+  transition: 500ms;
+  font-size: 29px;
+}

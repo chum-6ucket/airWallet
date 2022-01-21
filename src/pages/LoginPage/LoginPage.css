@@ -1,0 +1,9 @@
+.header-lang {
+    display: inline-block;
+    font-size: 21px;
+    line-height: 5vh;
+    position: fixed;
+    z-index: 102;
+    margin-bottom: 100vh;
+}
+

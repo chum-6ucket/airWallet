@@ -1,0 +1,75 @@
+
+
+.backcolor {
+    background-color: #fff;;
+}
+
+.testbox-ghost{
+    width: 150px;
+    height: 130px;
+    border-radius: 12px;
+    border: 1px solid var(--blue);
+}
+
+.testbox-blue {
+    width: 150px;
+    height: 130px;
+    border-radius: 12px;
+    background-color: var(--blue-light);
+}
+
+.bigtestbox {
+    width: 240px;
+    height: 130px;
+    border-radius: 12px;
+    background-color: var(--pink-light);
+}
+
+.testbox-modal {
+    width: 90px;
+    height: 130px;
+    border-radius: 12px;
+    border: 1px solid var(--blue-light);
+}
+
+
+.send-money-heading {
+    grid-area: 1/1/2/2;
+}
+
+.send-money-box {
+    grid-area: 2/1/3/3;
+    display: grid;
+    grid-template-columns: 1fr minmax(10px, 20px) 1fr;
+}
+
+.receive-money-heading {
+    grid-area: 1/3/2/4;
+}
+
+.receive-money-box {
+    grid-area: 2/3/3/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(10px, 20px) 1fr;
+}
+
+
+.wallets-money-heading {
+    grid-area: 4/1/5/4;
+}
+
+.wallets-money-box {
+    grid-area: 5/1/6/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(10px, 20px) 1fr minmax(10px, 20px) 1fr minmax(10px, 20px) 1fr minmax(10px, 20px) 1fr;
+}
+
+.cards-money-heading {
+    grid-area: 7/1/8/2;
+}
+
+.cards-money-box {
+    grid-area: 8/1/9/4;
+    display: grid;
+    grid-template-columns: 1fr minmax(10px, 20px) 1fr minmax(10px, 20px) 1fr;
+}

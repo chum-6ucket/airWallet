@@ -1,0 +1,136 @@
+
+.stepOne {
+}
+
+.stepTwo {
+    visibility: hidden;
+}
+
+.dropLayout {
+    display: grid;
+    grid-template-columns: 20px 12fr 1fr;
+    grid-template-rows: 2fr 14fr 1fr 1fr 2fr;
+    width: 330px;
+    height: 430px;
+}
+
+.select-container {
+    display: grid;
+    width: 330px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.select-container-active {
+    width: 330px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top: 1px solid rgba(0, 0, 0, .25);
+    border-right: 1px solid rgba(0, 0, 0, .25);
+    border-left: 1px solid rgba(0, 0, 0, .25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.selected-text {
+    color: #000;
+    /*margin-left: 30px;*/
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.selected-text::after {
+    content: '';
+    background: url('down-arrow.svg') no-repeat top right;
+    display: grid;
+    margin: -10px 0 0 290px ;
+    width: 14px;
+    height: 12px;
+}
+
+ul {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.select-options {
+    color: #000;
+    height: 275px;
+    overflow: auto;
+    position: absolute;
+    width: 330px;
+    scrollbar-width: thin;                                  /* for Firefox only */
+    scrollbar-color: rgba(0, 0, 0, .25) rgba(0, 0, 0, 0);   /* for Firefox only */
+    margin-left: -.5px;
+    margin-top: 0;
+    border-top: none;
+    border-right: 1px solid rgba(0, 0, 0, .25);
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+    border-left: 1px solid rgba(0, 0, 0, .25);
+}
+
+li {
+    background-color: #fff;
+    list-style-type: none;
+    padding: 6px 20px;
+    cursor: pointer;
+    margin-left: -8px;
+    width: 99.9%;
+    font-size: 16px;
+}
+
+li:hover {
+    transform: scale(1.05);
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.show-dropdown-options {
+    min-height: 50px;
+    opacity: 1;
+    visibility: visible;
+    /*border-top-height: 30px;*/
+}
+
+.hide-dropdown-options {
+    min-height: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visibleState {
+    grid-column: 1 / span 3;
+    color: #000000;
+}
+
+.padding {
+    padding-top: 10px;
+}
+
+.paragraph {
+    padding: 20px 0;
+}
+
+.recaptcha {
+    padding: 80px 0 0 0;
+    /*width: 300px;*/
+    margin-left: -7px;
+    width: 280px;
+}
+
+.hiddenState {
+    display: none;
+}
+
+.wrapper-fraction {
+    display: grid;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    color: #000;
+}
+
+.sing-up-input {
+    width: 100%;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, .25);
+}

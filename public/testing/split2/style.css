@@ -1,0 +1,17 @@
+.center-box {
+    text-align:center;
+    height:100%;
+    width:100%;
+}
+
+.r-half {
+    width:50%;
+    float:right;
+    height:100%
+}
+
+.l-half {
+    width:50%;
+    float:left;
+    height:100%
+}

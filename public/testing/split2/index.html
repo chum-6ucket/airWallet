@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - pure css select with colorable svg arrow</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+
+<div class="center-box" ng-if="!clicked">
+    <p>{{Item1}}</p>
+    <p>{{Item2}}</p>
+    <p>{{Item3}}</p>
+    <button ng-click="setClicked()"> Click me </button>
+</div>
+<div class="r-half" ng-if="clicked">
+    <div style="text-align:center;">
+        My new Page here
+    </div>
+</div>
+<div class="l-half" ng-if="clicked">
+    <div style="text-align:center;">
+        <p>{{Item1}}</p>
+        <p>{{Item2}}</p>
+        <p>{{Item3}}</p>
+    </div>
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+
+    app.controller('myCtrl', function($scope) {
+        $scope.Item1 = "myItem";
+        $scope.Item2 = "anotherItem";
+        $scope.Item3 = "aThirdItem";
+
+        $scope.clicked = false;
+
+        $scope.setClicked = function(){
+            $scope.clicked = !$scope.clicked;
+        }
+
+    });
+</script>
+</body>
+</html>
