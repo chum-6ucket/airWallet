@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 // import dragOver = Simulate.dragOver;
 // import {DNDProps} from './DND.props';
-// import './../App/App.scss';
+// import './../App/App.css';
 
 export const DND = (): JSX.Element => {
     const [boards, setBoards] = useState([

@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import './Header.module.css';
 import cn from 'classnames';
 import React from 'react';
-import {MdOutlineAirplaneTicket} from 'react-icons/all';
+import {MdOutlineAirplaneTicket} from 'react-icons/md';
 
 export const Header = ({className, ...props}: HeaderProps): JSX.Element => {
 

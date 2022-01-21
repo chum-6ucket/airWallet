@@ -1,7 +1,7 @@
 import React, {ReactNode, useRef} from 'react';
 import {CSSTransition} from 'react-transition-group';
 import classNames from 'classnames';
-import '../../pages/LoginPage/Splittest.scss';
+import '../../pages/LoginPage/Splittest.css';
 
 export interface ISidebarProps {
     className?: string;

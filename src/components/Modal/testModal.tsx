@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {default as ReactModal} from 'react-responsive-modal';
 import {IModalProps} from './Modal.props';
 import cn from 'classnames';
-import {GrClose} from 'react-icons/all';
+import {GrClose} from 'react-icons/gr';
 
 import "react-responsive-modal/styles.css";
 import "./Modal.module.scss";

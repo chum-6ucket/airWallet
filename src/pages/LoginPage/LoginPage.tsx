@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Split, Button, LoginForm, ProgressBar} from 'components';
 import {withLoginLayout} from '../../layout/Layout';
 import './LoginPage.css';
-import {ImEarth, BsChevronLeft} from 'react-icons/all';
+import {ImEarth} from 'react-icons/im';
 import Droptest from '../../components/droptest/Droptest';
 
 const LoginPage = (): JSX.Element => {

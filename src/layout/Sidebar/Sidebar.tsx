@@ -3,15 +3,12 @@ import styles from './Sidebar.module.css';
 import cn from 'classnames';
 import './Sidebar.scss';
 import {Menu} from '../../components';
-import {
-    BiExit,
-    FiCreditCard,
-    IoMailOutline,
-    IoSettingsOutline,
-    MdOutlineAirplaneTicket,
-    RiHome2Line
-} from 'react-icons/all';
-import React from 'react';
+import { BiExit } from 'react-icons/bi';
+import { FiCreditCard } from 'react-icons/fi';
+import { IoMailOutline } from 'react-icons/io5';
+import { IoSettingsOutline } from 'react-icons/io5';
+import { MdOutlineAirplaneTicket } from 'react-icons/md';
+import { RiHome2Line } from 'react-icons/ri';
 
 export const Sidebar = ({className, ...props}: SidebarProps): JSX.Element => {
     return (

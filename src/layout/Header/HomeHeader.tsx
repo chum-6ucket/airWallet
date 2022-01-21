@@ -4,7 +4,8 @@ import styles from './HomeHeader.module.css';
 // import './Header.module.css';
 import cn from 'classnames';
 import React from 'react';
-import {FaUserAstronaut, ImEarth, MdOutlineAirplaneTicket} from 'react-icons/all';
+import {ImEarth} from 'react-icons/im';
+import {FaUserAstronaut} from 'react-icons/fa';
 
 export const HomeHeader = ({className, ...props}: HeaderProps): JSX.Element => {
 

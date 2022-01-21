@@ -1,41 +1,32 @@
-$transition: 1.2s;
-
 .a-link {
-  //color: #fff;
   color: rgba(255, 255, 255, .4);
   font-size: 14px;
   text-decoration: none;
   margin: 5px 0 0 0;
 }
-
 .a-link:hover {
   cursor: pointer;
   text-decoration: underline;
   color: #fff;
   font-size: 14px;
 }
-
 .custom-search {
   margin: 0 0 0 -20px;
   position: relative;
   width: 300px;
 }
-
 .header {
   display: none;
 }
-
 .custom-button {
   position: relative;
   margin: 0 0 0 -65px;
   color: rgba(255, 255, 255, .4);
 }
-
 .custom-button:hover {
   color: rgba(255, 255, 255, 1);
   text-decoration: underline;
 }
-
 .container {
   display: grid;
   grid-column: 2;
@@ -45,7 +36,6 @@ $transition: 1.2s;
   transform: translateY(-38vh) translateX(0vw);
   transition: all 0.9s ease-out;
 }
-
 .container-activate {
   display: grid;
   grid-column: 2;
@@ -54,31 +44,24 @@ $transition: 1.2s;
   transform: translateY(-38vh) translateX(-5vw);
   transition: all 0.6s ease-out;
 }
-
 .container-activate .a-link {
   visibility: hidden;
 }
-
-
 .lang-wrapper {
   display: grid;
   grid-column-start: 3;
   align-content: start;
   margin-top: -5vh;
   z-index: 101;
-
 }
-
 .lang-after {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 0 7px;
   text-transform: uppercase;
-  color: rgb(1, 80, 119);
+  color: #015077;
   transition: all 0.7s ease-in-out;
-
 }
-
 .lang-before {
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -86,21 +69,17 @@ $transition: 1.2s;
   text-transform: uppercase;
   color: #fff;
 }
-
 .lang-a {
   display: grid;
   align-items: center;
   font-size: 21px;
   font-weight: 400;
 }
-
 .lang-icon {
   display: grid;
   justify-items: end;
   font-size: 24px;
-
 }
-
 .sing-up-button {
   display: grid;
   grid-row: 5/span 1;
@@ -109,34 +88,26 @@ $transition: 1.2s;
   margin: 8px 0;
   border: none;
 }
-
 .sing-up-wrapper {
   display: grid;
   grid-column-start: 1;
   grid-row-start: 2;
-  //align-items: center;
-  //justify-items: center;
   margin-top: 45px;
-  //margin-top: 4vh;
 }
-
 .sign-up-container {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 .wrapper-go-back {
   grid-column: 1 / span 1;
   grid-row: 3/ span 1;
 }
-
 .a-go-back {
   cursor: pointer;
   display: grid;
   justify-items: center;
   margin-top: 3px;
-  color: #000000;
+  color: #000;
 }
-
 .Split {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -148,40 +119,31 @@ $transition: 1.2s;
   left: 50%;
   width: 100%;
   background-color: #fff;
-  //background-color: rgba(0, 0, 0, .05);
-
-
-  &.enter {
-    opacity: 0;
-    transition: all 0.6s ease-out;
-    display: grid;
-
-  }
-
-  &.enter-active {
-    opacity: 1;
-    transition: all 0.6s ease-out;
-  }
-
-  &.exit {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity $transition, transform $transition;
-  }
-
-  &.exit-active {
-    opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 200ms, transform $transition;
-  }
 }
-
+.Split.enter {
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  display: grid;
+}
+.Split.enter-active {
+  opacity: 1;
+  transition: all 0.6s ease-out;
+}
+.Split.exit {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 1.2s, transform 1.2s;
+}
+.Split.exit-active {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 200ms, transform 1.2s;
+}
 .footer-wrapper {
   display: grid;
   grid-column: 1 / span 4;
   grid-row: 3 / span 1;
 }
-
 .footer-login {
   display: grid;
   grid-template-columns: 30vw 8fr 7fr 24vw;
@@ -190,27 +152,22 @@ $transition: 1.2s;
   line-height: 16px;
   justify-items: end;
 }
-
 .footer-login-after {
-  display: none
+  display: none;
 }
-
 @media (max-width: 767px) {
   .footer-login {
-    display: none
+    display: none;
   }
-
   .container-activate {
     display: grid;
     grid-column: 2;
     grid-row: 3;
     align-content: center;
-
     transform: translateY(-28vh) translateX(-5vw);
     transition: all 0.6s ease-out;
   }
 }
-
 .select-items {
   position: absolute;
   background-color: DodgerBlue;
@@ -219,12 +176,11 @@ $transition: 1.2s;
   right: 0;
   z-index: 99;
 }
-
 .selectStyle {
-  background-color: #804BD8;
+  background-color: #804bd8;
 }
-
 .optionStyle {
-  background-color: #804BD8;
+  background-color: #804bd8;
   color: #fff;
 }
+ 

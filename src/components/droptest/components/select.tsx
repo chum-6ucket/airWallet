@@ -5,7 +5,7 @@ import {SelectContext} from './selectContext';
 import ReCAPTCHA from 'react-google-recaptcha';
 import {Button} from '../../Button/Button';
 import {ProgressBar} from '../../Forms/progressBar/ProgressBar';
-import {BsChevronLeft} from 'react-icons/all';
+import {BsChevronLeft} from 'react-icons/bs';
 import {Router, useNavigate} from 'react-router';
 import {Route} from "react-router-dom";
 import HomePage from "../../../pages/HomePage/HomePage";
